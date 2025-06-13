@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FC Barcelona Fan Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* style.css – Home Page Styles */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #004d98;
+  color: #fff;
+  padding: 20px;
+}
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section */
+main {
+  padding: 40px 20px;
+}
+main section {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FC Barcelona</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to FC Barcelona Fan Page</h2>
+      <p>Stay updated with the latest news, match schedules, and player information.</p>  
+      <img id="team-photo" src="travis.jpg" alt="FC Barcelona Team" />
+
+<script>
+  const image = document.getElementById("team-photo");
+  image.addEventListener("mouseover", function() {
+    image.style.opacity = 0.8;
+  });
+  image.addEventListener("mouseout", function() {
+    image.style.opacity = 1;
+  });
+</script>
+
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 FC Barcelona Fan Page</p>
+  </footer>
+</body>
+</html>
