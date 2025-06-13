@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="style.css"> </a>
+
+    <title>Document</title>
+    <style>
+        input[ type=text], select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: #ccc;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #444;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 1px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: #ccc;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #aaaa;
+        }
+        div{
+            border-radius: 7px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        h1{
+            font-family: Algerian;
+
+        }
+    </style> 
+</head>
+<body style="background-image: image(c:\Users\JMA OFFICIAL\OneDrive\Desktop\my project\Screenshot_20250427_211128_Instagram.jpg);">
+    <h1 > BARCELONA shop</h1>
+    <div>
+        <form action="">
+            <label for="fname"> firstname</label>
+            <input type="text" id="fname" name=" firstname" placeholder=" your name">
+
+            <label for="lname"> last name</label>
+            <input type="text" id="lname" name="last name" placeholder=" your last name">
+
+            <label for=" email"> Email</label>
+            <input type="text" id="email" name="email" placeholder=" Email">
+
+            <label for="country"> country</label>
+            <select name="id" id="country" name="country">
+                <option value="tanzania"> tanzania</option>
+                <option value="kenya"> kenya</option>
+                <option value="uganda">uganda</option>
+                <option value="nigeria"> nigeria</option>
+                <option value=" togo"> togo</option>
+                <option value="mozambique"> mozambique</option>
+                <option value=" usa"> usa</option>
+                <option value=" canada"> canada</option>
+                <option value=" australia "> australia</option>
+                <option value="england"> england</option>
+
+            </select>
+
+            <input type="submit" value="submit">
+  <script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    if (!name || !email) {
+      alert("Please fill in all fields.");
+      event.preventDefault();
+    }
+  });
+</script>
+
+
+
+    </div>
+</body>
+</html>
